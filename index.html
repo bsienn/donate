@@ -56,26 +56,21 @@
 
         <div class="col-md-4 col-lg-3 col-sm-12">
             <div id="donation_side">
-                <div class="text-center"><strong>Donation amount (USD)</strong></div>
-
-                <ul class="donation_options">
-                    <li><a href="javascript:;" class="btn btn-default thar-three btn-block">Just Once</a></li>
-                    <li><a href="javascript:;" class="btn btn-default thar-three btn-block active">Give Monthly</a></li>
-                </ul>
+                <div class="text-center"><strong>Select Montly Donation amount (USD)</strong></div>
 
                 <ul id="select_amount">
-                    <li><a href="javascript:;" class="select_amount_item btn btn-default thar-three btn-block">$3</a></li>
-                    <li><a href="javascript:;" class="select_amount_item btn btn-default thar-three btn-block">$5</a></li>
-                    <li><a href="javascript:;" class="select_amount_item btn btn-default thar-three btn-block">$10</a></li>
-                    <li><a href="javascript:;" class="select_amount_item btn btn-default thar-three btn-block">$20</a></li>
-                    <li><a href="javascript:;" class="select_amount_item btn btn-default thar-three btn-block">$30</a></li>
-                    <li><a href="javascript:;" class="select_amount_item btn btn-default thar-three btn-block">$50</a></li>
-                    <li><a href="javascript:;" class="select_amount_item btn btn-default thar-three btn-block">$100</a></li>
-                    <li><a href="javascript:;" id="other_option" class="select_amount_item btn btn-default thar-three btn-block">Other</a></li>
+                    <li><span class="select_amount_item btn btn-default thar-three btn-block">$3</span></li>
+                    <li><span class="select_amount_item btn btn-default thar-three btn-block">$5</span></li>
+                    <li><span class="select_amount_item btn btn-default thar-three btn-block">$10</span></li>
+                    <li><span class="select_amount_item btn btn-default thar-three btn-block">$20</span></li>
+                    <li><span class="select_amount_item btn btn-default thar-three btn-block">$30</span></li>
+                    <li><span class="select_amount_item btn btn-default thar-three btn-block">$50</span></li>
+                    <li><span class="select_amount_item btn btn-default thar-three btn-block">$100</span></li>
+                    <li><span id="other_option" class="select_amount_item btn btn-default thar-three btn-block">Other</span></li>
                 </ul>
 
                 <div id="other_amount_parent" class="col-md-12 form-group" style="padding: 0 5px; display: none;">
-                    <input type="text" id="other_amount" name="other_amount" class="form-control">
+                    <input type="number" id="other_amount" name="other_amount" class="form-control" min="1" onwheel="javascript:event.preventDefault();">
                 </div>
 
                 <div class="col-md-12 form-group" style="padding: 0 5px;">
@@ -132,58 +127,8 @@
         </div>
     </section>
 
-    <script src="assets/js/app.js"></script>
     <script src="https://checkout.stripe.com/checkout.js"></script>
-
-    <script>
-        var handler = StripeCheckout.configure({
-            key: 'pk_test_PvaQH5BvPVNZzQ35bC9XxSFF',
-            image: 'https://stripe.com/img/documentation/checkout/marketplace.png',
-            locale: 'auto',
-            token: function(token) {
-            // You can access the token ID with `token.id`.
-            // Get the token ID to your server-side code for use.
-            }
-        });
-
-        document.getElementById('customButton').addEventListener('click', function(e) {
-            var is_selected = false;
-            var aItems = document.querySelectorAll(".select_amount_item");
-
-            for (var i = 0; i < aItems.length; i++) {
-                if( aItems[i].className.match(/\bactive\b/) && aItems[i].id !== 'other_option' ) {
-                    is_selected = true;
-                    break;
-                }
-            }
-
-            if(!is_selected && document.getElementById("other_amount").value === '') {
-                if(document.getElementById("other_amount_parent").style.display === 'none') {
-                    document.getElementById("other_amount_parent").style.display = 'block';
-                    document.getElementById("other_option").className += ' active';
-                }
-
-                document.getElementById("other_amount").focus();
-                alert('Please select an amount to donate');
-
-                return false;
-            }
-
-            // Open Checkout with further options :
-            handler.open({
-                name: 'Bsienn',
-                description: '2 widgets',
-                amount: 2000
-            });
-
-            e.preventDefault();
-        });
-
-        // Close Checkout on page navigation:
-        window.addEventListener('popstate', function() {
-            handler.close();
-        });
-    </script>
+    <script src="assets/js/app.js"></script>
 </body>
 
 </html>

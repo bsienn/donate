@@ -71,7 +71,7 @@ a:hover {
     background: transparent;
 }
 
-a.btn-default.thar-three {
+span.btn-default.thar-three {
     color: #000;
     cursor: pointer;
     display: block;
@@ -81,32 +81,32 @@ a.btn-default.thar-three {
     padding: 15px 0;
 }
 
-#select_amount a.btn-default.thar-three {
+#select_amount span.btn-default.thar-three {
     min-height: 58px;
     padding: 18px 0;
 }
 
-#select_amount li:last-child a.btn-default.thar-three {
+#select_amount li:last-child span.btn-default.thar-three {
     padding: 19px 0 0;
 }
 
-#select_amount li:last-child a.btn-default.thar-three input {
+#select_amount li:last-child span.btn-default.thar-three input {
     padding-left: 5px;
 }
 
-a.btn-default.thar-three:focus {
+span.btn-default.thar-three:focus {
     color: #fff !important;
     background-color: navy;
 }
 
-a.btn-default.thar-three:focus:before {
+span.btn-default.thar-three:focus:before {
     left: 0%;
     right: auto;
     width: 100%;
     transition: all 0.4s cubic-bezier(0.42, 0, 0.58, 1);
 }
 
-a.btn-default.thar-three:before {
+span.btn-default.thar-three:before {
     display: block;
     position: absolute;
     top: 0px;
@@ -170,7 +170,7 @@ a.btn-default.thar-three:before {
     margin-right: 15px;
 }
 
-a.btn-default.thar-three.active {
+span.btn-default.thar-three.active {
     color: #fff !important;
     background-color: navy;
 }
@@ -211,7 +211,7 @@ a.btn-default.thar-three.active {
 
 @media screen and (max-width: 340px) {
     /*#select_amount li{width: 50%;}*/
-    #select_amount a.btn-default.thar-three {
+    #select_amount span.btn-default.thar-three {
         min-height: 50px;
         padding: 14px 0;
     }
