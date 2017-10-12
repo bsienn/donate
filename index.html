@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Bsienn Khan">
+    <meta name="theme-color" content="#84b4cb" />
+
+    <title>Donation Page</title>
+
+    <link href="assets/css/main.min.css" rel="stylesheet">
+    <link href="assets/css/custom.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+    <section class="main-area">
+        <div class="col-md-2 col-lg-2 col-md-2 col-sm-12 text-center">
+            <img id="logo" src="assets/images/logo.png" class="img-responsive">
+        </div>
+
+        <div class="col-md-6 col-lg-7 hidden-sm hidden-xs">
+            <div class="col-md-12">
+                <div class="title">Lorem ipsum dolor sit amet.</div>
+
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
+
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                    magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                    commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                    nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
+                    anim id est laborum.
+                </p>
+
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                    magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                    commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                    nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
+                    anim id est laborum.
+                </p>
+
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                    magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                    commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                    nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
+                    anim id est laborum.
+                </p>
+            </div>
+        </div>
+
+        <div class="col-md-4 col-lg-3 col-sm-12">
+            <div id="donation_side">
+                <div class="text-center"><strong>Donation amount (USD)</strong></div>
+
+                <ul class="donation_options">
+                    <li><a href="javascript:;" class="btn btn-default thar-three btn-block">Just Once</a></li>
+                    <li><a href="javascript:;" class="btn btn-default thar-three btn-block active">Give Monthly</a></li>
+                </ul>
+
+                <ul id="select_amount">
+                    <li><a href="javascript:;" class="select_amount_item btn btn-default thar-three btn-block">$3</a></li>
+                    <li><a href="javascript:;" class="select_amount_item btn btn-default thar-three btn-block">$5</a></li>
+                    <li><a href="javascript:;" class="select_amount_item btn btn-default thar-three btn-block">$10</a></li>
+                    <li><a href="javascript:;" class="select_amount_item btn btn-default thar-three btn-block">$20</a></li>
+                    <li><a href="javascript:;" class="select_amount_item btn btn-default thar-three btn-block">$30</a></li>
+                    <li><a href="javascript:;" class="select_amount_item btn btn-default thar-three btn-block">$50</a></li>
+                    <li><a href="javascript:;" class="select_amount_item btn btn-default thar-three btn-block">$100</a></li>
+                    <li><a href="javascript:;" id="other_option" class="select_amount_item btn btn-default thar-three btn-block">Other</a></li>
+                </ul>
+
+                <div id="other_amount_parent" class="col-md-12 form-group" style="padding: 0 5px; display: none;">
+                    <input type="text" id="other_amount" name="other_amount" class="form-control">
+                </div>
+
+                <div class="col-md-12 form-group" style="padding: 0 5px;">
+                    <button id="customButton" class="btn btn-primary btn-block">Donate by credit/debit card</button>
+                </div>
+
+                <!-- <div class="col-md-12 form-group" style="padding: 0 5px;">
+                    <button class="btn btn-default btn-block">
+                        <img src="assets/images/paypal.png">
+                    </button>
+                </div> -->
+
+                <div class="clearfix"></div>
+
+                <div class="where_texts">
+                    <p><strong>Where your donation goes </strong></p>
+
+                    <p> <strong>Technology:</strong> Servers, bandwidth, maintenance, development. Wikipedia is one of the top
+                        10 websites in the world, and it runs on a fraction of what other top websites spend.
+                    </p>
+
+                    <p> <strong>People and Projects:</strong> The other top websites have thousands of employees. We have about
+                        300 staff to support a wide variety of projects, making your donation a great investment in a highly-efficient
+                        not-for-profit organization.
+                    </p>
+                </div>
+
+                <div class="clearfix"></div>
+            </div>
+        </div>
+    </section>
+
+    <div class="clearfix"></div>
+
+    <section class="footer">
+        <div class="footer-text">
+            <p>By donating, you agree to share your personal information with the freeCodeCamp Foundation, the nonprofit organization
+                that hosts Wikipedia and other freeCodeCamp projects, and its service providers pursuant to our <a href="javascript:;">donor policy</a>.
+                freeCodeCamp Foundation and its service providers are located in the United States and in other countries whose
+                privacy laws may not be equivalent to your own. We do not sell or trade your information to anyone. For more
+                information please read our <a href="javascript:;">donor policy</a>.
+            </p>
+
+            <p>
+                <a href="javascript:;">
+                    For recurring donors, fixed monthly payments will be debited by the freeCodeCamp Foundation on the monthly anniversary of the first donation, until such time as you notify us to discontinue them. Donations initiated on the 29, 30, or 31 of the month will recur on the last day of the month for shorter months, as close to the original date as possible. For questions, please contact donate@freeCodeCamp.org.
+                </a>
+            </p>
+
+            <div class="footer_links">
+                <a href="javascript:;">Problems donating?</a>
+                <a href="javascript:;">Frequently asked questions</a>
+            </div>
+        </div>
+    </section>
+
+    <script src="assets/js/app.js"></script>
+    <script src="https://checkout.stripe.com/checkout.js"></script>
+
+    <script>
+        var handler = StripeCheckout.configure({
+            key: 'pk_test_PvaQH5BvPVNZzQ35bC9XxSFF',
+            image: 'https://stripe.com/img/documentation/checkout/marketplace.png',
+            locale: 'auto',
+            token: function(token) {
+            // You can access the token ID with `token.id`.
+            // Get the token ID to your server-side code for use.
+            }
+        });
+
+        document.getElementById('customButton').addEventListener('click', function(e) {
+            var is_selected = false;
+            var aItems = document.querySelectorAll(".select_amount_item");
+
+            for (var i = 0; i < aItems.length; i++) {
+                if( aItems[i].className.match(/\bactive\b/) && aItems[i].id !== 'other_option' ) {
+                    is_selected = true;
+                    break;
+                }
+            }
+
+            if(!is_selected && document.getElementById("other_amount").value === '') {
+                if(document.getElementById("other_amount_parent").style.display === 'none') {
+                    document.getElementById("other_amount_parent").style.display = 'block';
+                    document.getElementById("other_option").className += ' active';
+                }
+
+                document.getElementById("other_amount").focus();
+                alert('Please select an amount to donate');
+
+                return false;
+            }
+
+            // Open Checkout with further options :
+            handler.open({
+                name: 'Bsienn',
+                description: '2 widgets',
+                amount: 2000
+            });
+
+            e.preventDefault();
+        });
+
+        // Close Checkout on page navigation:
+        window.addEventListener('popstate', function() {
+            handler.close();
+        });
+    </script>
+</body>
+
+</html>
